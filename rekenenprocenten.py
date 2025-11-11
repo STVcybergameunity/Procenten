@@ -18,12 +18,12 @@ match ans:
         c3=int(input("Choose the original number "))
         c3s=int(input("Choose a percentage "))
         ans3=round((c3*((c3s+100)/100)))
-        print(str(ans3)+"%")
+        print(str(ans3))
     case 4:
         c4=int(input("Choose the original number"))
         c4s=int(input("Choose the percentage decrease "))
         ans4=round((c4*((100-c4s)/100)))
-        print(str(ans4)+"%")
+        print(str(ans4))
     case 5:
         c5=int(input("Choose the original number "))
         c5s=int(input("Choose the result "))
@@ -45,5 +45,7 @@ match ans:
         c8s=int(input("Choose the percentage "))
         ans8=round(c8/((100-c8s)/100))
         print(str(ans8))
+    case _:
+        print("Nee")
     case _:
         print("Nee")
